@@ -4,19 +4,19 @@ import {MouseParallax} from "react-just-parallax";
 import titleEllipseSmall from "../../../images/abstractElements/titleEllipseSmall.png";
 
 const ParallaxDoubleEllipse = (props) => {
-    const {top, left} = props;
+    const {top, right} = props;
 
     const bigEllipseStyle={
         height: 387,
         position: 'absolute',
         top: top,
-        left: left,
+        right: right,
     }
     const smallEllipseStyle={
         height: 308,
         position: 'absolute',
         top: top+32,
-        left: left+45,
+        right: right+50,
     }
 
     return (

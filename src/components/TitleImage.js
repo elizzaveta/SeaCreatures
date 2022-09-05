@@ -12,34 +12,35 @@ import {MouseParallax} from "react-just-parallax";
 
 
 const TitleImage = () => {
+
     return (
-        <div style={{position: "relative", height: 532, width: 525}}>
+        <div style={{position: "relative", height: "inherit", width: "inherit"}}>
             <MouseParallax strength={0.011} isAbsolutelyPositioned={true}>
-                <img src={Claw} style={{position: "absolute", height: 227, top: 108, left: 391}}/>
+                <img src={Claw} style={{position: "absolute", height: "42.7%", top: "20%", left: "74.5%"}}/>
             </MouseParallax>
             <MouseParallax strength={0.022} isAbsolutelyPositioned={true}>
-                <img src={crab} style={{position: "absolute", height: 242, top: 5, left: 0}}/>
+                <img src={crab} style={{position: "absolute", height: "45.5%", top: "0.9%", left: 0}}/>
             </MouseParallax>
             <MouseParallax strength={0.015} isAbsolutelyPositioned={true}>
-                <img src={pinkCrab} style={{position: "absolute", height: 130, top: 215, left: 34}}/>
+                <img src={pinkCrab} style={{position: "absolute", height: "24.4%", top: "40.4%", left: "6.5%"}}/>
             </MouseParallax>
             <MouseParallax strength={0.009} isAbsolutelyPositioned={true}>
-                <img src={greenCrab} style={{position: "absolute", height: 117, top: 410, left: 257}}/>
+                <img src={greenCrab} style={{position: "absolute", height: "22%", top: "77%", left: "49%"}}/>
             </MouseParallax>
             <MouseParallax strength={0.02} isAbsolutelyPositioned={true}>
-                <img src={greenFish} style={{position: "absolute", height: 242, top: 206, left: 129}}/>
+                <img src={greenFish} style={{position: "absolute", height: "45.5%", top: "38.7%", left: "24.6%"}}/>
             </MouseParallax>
             <MouseParallax strength={0.027} isAbsolutelyPositioned={true}>
-                <img src={redFish} style={{position: "absolute", height: 142, top: 386, left: 12}}/>
+                <img src={redFish} style={{position: "absolute", height: "26.7%", top: "72.6%", left: "2.3%"}}/>
             </MouseParallax>
             <MouseParallax strength={0.031} isAbsolutelyPositioned={true}>
-                <img src={shell1} style={{position: "absolute", height: 46, top: 353, left: 0}}/>
+                <img src={shell1} style={{position: "absolute", height: "8.6%", top: "66.3%", left: 0}}/>
             </MouseParallax>
             <MouseParallax strength={0.013} isAbsolutelyPositioned={true}>
-                <img src={shell2} style={{position: "absolute", height: 83, top: 0, left: 0}}/>
+                <img src={shell2} style={{position: "absolute", height: "15.6%", top: 0, left: 0}}/>
             </MouseParallax>
             <MouseParallax strength={0.033} isAbsolutelyPositioned={true}>
-                <img src={shrimp} style={{position: "absolute", height: 146, top: 0, left: 375}}/>
+                <img src={shrimp} style={{position: "absolute", height: "27.4%", top: 0, left: "71.4%"}}/>
             </MouseParallax>
         </div>
     );

@@ -9,23 +9,41 @@ import TitleImage from "./TitleImage";
 const TitleBlock = () => {
     return (
         <ThemeProvider theme={theme}>
-            <Container style={{position:"relative", height:750}}>
+            <Container style={{position: "relative",}}>
                 <Grid container
-                      columns={{md: 6, lg: 12, sm:6}}
-                      spacing={{sm: 5, md: 6, lg:5}}
-                      height={"100%"}
-                      alignItems={"center"}>
+                      columns={{md: 2, lg: 2, sm: 1, xs: 1}}
+                      spacing={{lg: 5, md: 5, sm: 0, xs: 0}}
+                      height={window.innerHeight}
+                      style={{display:"flex", alignItems:"center"}}
+                >
 
-                    <Grid item xs={6} textAlign={{lg: 'right', md: "center", sm: "center"}}>
+                    <Grid item lg={1} md={1} sm={1} xs={1} sx={{display: "flex"}}
+                          justifyContent={{lg: 'right', md: "right", sm: "center", xs:"center"}}
+                          alignItems="center"
+                          height={{lg:532, md:400, sm:400, xs:400}}
+                          width={{lg:525, md:395, sm:395, xs:395}}
+                    >
                         <TitleImage/>
                     </Grid>
 
-                    <Grid item xs={6} sx={{display: "flex"}} justifyContent={{lg: "left", md: "center", sm: "center"}}>
+                    <Grid item lg={1} md={1} sm={1} xs={1} sx={{display: "flex"}}
+                          justifyContent={{lg: "left", md: "left", sm: "center", xs:"center"}}
+                          alignItems="center"
+                          height={{lg:450, md:320, sm:200, xs:200}}
+                          width={{lg:525, md:395, sm:395, xs:395}}
+                    >
                         <TitleText/>
                     </Grid>
 
                 </Grid>
-                <Typography style={{position:"absolute", bottom:30, color:'lightslategray', opacity:0.5, textAlign:'center', width:"100%"}} variant="subtitle2">Hint: try to move your mouse</Typography>
+                <Typography style={{
+                    position: "absolute",
+                    bottom: 30,
+                    color: 'lightslategray',
+                    opacity: 0.5,
+                    textAlign: 'center',
+                    width: "100%"
+                }} variant="subtitle2">Hint: try to move your mouse</Typography>
             </Container>
         </ThemeProvider>
     );

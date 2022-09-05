@@ -4,7 +4,6 @@ import FishBlock from "./FishBlock";
 import {ParallaxProvider} from "react-scroll-parallax";
 import CrabBlock from "./CrabBlock";
 import ShrimpBlock from "./ShrimpBlock";
-import {ScrollParallax} from "react-just-parallax";
 import ScorpionBlock from "./ScorpionBlock";
 import Footer from "./Footer";
 

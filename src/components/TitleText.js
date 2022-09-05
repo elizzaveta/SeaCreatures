@@ -5,22 +5,27 @@ import ParallaxPinkCircle from "./ParallaxElements/abstract/ParallaxPinkCircle";
 
 const TitleText = () => {
     return (
-        <Box component="div" pt={{md: 4, lg: 6}} style={{position: 'relative'}}>
+        <Box component="div" pt={{lg: 6, xs:3}}
+             style={{position: 'relative', display: 'flex', flexDirection:"column", height: "inherit", width: "inherit"}}
+            justifyContent={{sm:"center", xs:"center"}}
+        >
 
-            <Box sx={{width: 585}}>
+            <Box>
                 <Typography variant="h1">
                     Crustacean
                 </Typography>
-                <ParallaxDoubleEllipse top={-32} left={145}/>
             </Box>
 
-            <Typography variant="h3" style={{width: 520}}>
+            <Typography variant="h3">
                 A quick walkthrough into
                 the world of ocean
                 crustacean creatures
             </Typography>
 
-            <ParallaxPinkCircle/>
+            <Box visibility={{lg:"visible", md: "visible",sm:"hidden", xs:"hidden"}}>
+                <ParallaxDoubleEllipse top={-32} right={0}/>
+                <ParallaxPinkCircle/>
+            </Box>
 
         </Box>
     );
