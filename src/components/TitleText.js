@@ -7,8 +7,7 @@ const TitleText = () => {
     return (
         <Box component="div" pt={{lg: 6, xs:3}}
              style={{position: 'relative', display: 'flex', flexDirection:"column", height: "inherit", width: "inherit"}}
-            justifyContent={{sm:"center", xs:"center"}}
-        >
+            justifyContent={{sm:"center", xs:"center"}}>
 
             <Box>
                 <Typography variant="h1">

@@ -14,10 +14,12 @@ const ParallaxWater = () => {
     return (
         <div>
             <MouseParallax strength={0.03} isAbsolutelyPositioned={true} zIndex={-1}>
-            <img ref={parallaxTop.ref} src={topWater} style={{position: "absolute", top: -150, zIndex: -1, width:"110%",left:"-5%"}}/>
+                <img ref={parallaxTop.ref} src={topWater} alt="water"
+                     style={{position: "absolute", top: -150, zIndex: -1, width: "110%", left: "-5%"}}/>
             </MouseParallax>
             <MouseParallax strength={0.019} isAbsolutelyPositioned={true} zIndex={-2}>
-            <img ref={parallaxBottom.ref} src={bottomWater} style={{position: "absolute", top: -100, zIndex: -2, width:"110%",left:"-5%"}}/>
+                <img ref={parallaxBottom.ref} src={bottomWater} alt="water"
+                     style={{position: "absolute", top: -100, zIndex: -2, width: "110%", left: "-5%"}}/>
             </MouseParallax>
         </div>
     );

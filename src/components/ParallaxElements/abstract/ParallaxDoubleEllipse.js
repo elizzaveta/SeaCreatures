@@ -22,11 +22,11 @@ const ParallaxDoubleEllipse = (props) => {
     return (
         <div>
             <MouseParallax strength={0.019} isAbsolutelyPositioned={true} zIndex={-2}>
-                <img src={titleEllipse}
+                <img src={titleEllipse} alt="ellipse"
                      style={bigEllipseStyle}/>
             </MouseParallax>
             <MouseParallax strength={0.012} isAbsolutelyPositioned={true} zIndex={-1}>
-                <img src={titleEllipseSmall}
+                <img src={titleEllipseSmall} alt="ellipse"
                      style={smallEllipseStyle}/>
             </MouseParallax>
         </div>

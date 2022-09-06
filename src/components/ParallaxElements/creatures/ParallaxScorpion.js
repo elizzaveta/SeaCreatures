@@ -8,7 +8,7 @@ const ParallaxScorpion = (props) => {
         speed: speed
     })
     return (
-        <img ref={parallax.ref} src={scorpion}
+        <img ref={parallax.ref} src={scorpion} alt="scorpion"
              style={{position: "absolute", top: 150, left: left, height: 395, rotate: `${degree}deg`}}/>
 
     );

@@ -1,13 +1,11 @@
 import React from 'react';
 import {Box, ThemeProvider, Typography} from "@material-ui/core";
 import {theme} from "../styles/Theme";
-import {Parallax} from "react-scroll-parallax";
 
 const CreatureDescription = (props) => {
     const {name, description, titleColor} = props;
     return (
         <ThemeProvider theme={theme}>
-            {/*<Parallax speed={-10}>*/}
                 <Box component="div"
                      style={{
                          display: "flex",
@@ -31,7 +29,6 @@ const CreatureDescription = (props) => {
 
                     </Box>
                 </Box>
-            {/*</Parallax>*/}
         </ThemeProvider>
 
     );

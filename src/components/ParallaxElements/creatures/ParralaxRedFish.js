@@ -15,7 +15,7 @@ const ParallaxRedFish = (props) => {
     }
     return (
         <div ref={parallax.ref}>
-            <img src={redFish} style={fishStyle}/>
+            <img src={redFish} style={fishStyle} alt="red fish"/>
         </div>
     );
 };

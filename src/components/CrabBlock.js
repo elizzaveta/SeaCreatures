@@ -28,13 +28,13 @@ const CrabBlock = () => {
                         titleColor="custom"/>
                 </Container>
 
-                <img src={crab3} height={270}
+                <img src={crab3} height={270} alt="crab"
                      style={{position: "absolute", top: 50, left: 170, zIndex: -3, rotate: '150deg'}}/>
-                <img src={crab2} height={195}
+                <img src={crab2} height={195} alt="crab"
                      style={{position: "absolute", top: 446, left: 255, zIndex: -3, rotate: '22deg'}}/>
-                <img src={crab1} height={265}
+                <img src={crab1} height={265} alt="crab"
                      style={{position: "absolute", top: 70, left: 1000, zIndex: -3, rotate: '-150deg'}}/>
-                <img src={crab4} height={215}
+                <img src={crab4} height={215} alt="crab"
                      style={{position: "absolute", top: 449, left: 850, zIndex: -3, rotate: '-22deg'}}/>
 
                 <ParallaxWater/>
