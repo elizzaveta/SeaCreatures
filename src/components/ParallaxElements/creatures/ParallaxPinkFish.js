@@ -2,20 +2,17 @@ import React from 'react';
 import pinkFish from "../../../images/creatures/pinkFish.png";
 import {useParallax} from "react-scroll-parallax";
 
-const ParallaxPinkFish = (props) => {
-    const {top} = props
+const ParallaxPinkFish = () => {
     const parallax = useParallax({
-        translateX: [100, 68],
+        translateX: ["200%", "140%"],
     });
     const fishStyle = {
         position: "absolute",
-        top: top,
-        height: 265
+        top: "60vh",
+        height: "20vw"
     }
     return (
-        <div ref={parallax.ref}>
-            <img src={pinkFish} style={fishStyle} alt="pink fish"/>
-        </div>
+            <img ref={parallax.ref} src={pinkFish} style={fishStyle} alt="pink fish"/>
     );
 };
 

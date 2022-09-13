@@ -12,10 +12,14 @@ const FishBlock = () => {
     return (
         <ThemeProvider theme={theme}>
             <Container style={{position: "relative", height:window.innerHeight}}>
-                <ParallaxPinkFish top={350}/>
-                <ParallaxRedFish top={70}/>
+
                 <CreatureDescription name={creatures.fish.name} description={creatures.fish.description} titleColor="secondary"/>
+
+                <ParallaxPinkFish/>
+                <ParallaxRedFish/>
+
                 <ParallaxBackground/>
+
                 <ParallaxBubble radius={40} top={80} left={400} speed={-5} strength={-0.01}/>
                 <ParallaxBubble radius={40} top={90} left={1000} speed={-4} strength={0.03}/>
                 <ParallaxBubble radius={30} top={470} left={100} speed={-7} strength={-0.04}/>

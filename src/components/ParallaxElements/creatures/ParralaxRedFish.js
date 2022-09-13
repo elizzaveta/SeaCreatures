@@ -1,22 +1,20 @@
 import React from 'react';
 import redFish from "../../../images/creatures/redFish.png";
 import {useParallax} from "react-scroll-parallax";
+import {Box} from "@material-ui/core";
 
-const ParallaxRedFish = (props) => {
-    const {top} = props
+const ParallaxRedFish = () => {
     const parallax = useParallax({
-        translateX: [-50, -4],
+        translateX: ["-50%", "10%"],
         easing: 'easeInQuad'
     });
     const fishStyle = {
-        position: "absolute",
-        top: top,
-        height: 265
+        top: "5vh",
+        position:"absolute",
+        height: "20vw"
     }
     return (
-        <div ref={parallax.ref}>
-            <img src={redFish} style={fishStyle} alt="red fish"/>
-        </div>
+            <img src={redFish} ref={parallax.ref}  style={fishStyle} alt="red fish"/>
     );
 };
 

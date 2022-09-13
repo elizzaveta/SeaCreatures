@@ -12,7 +12,6 @@ import {MouseParallax} from "react-just-parallax";
 
 
 const TitleImage = () => {
-
     return (
         <div style={{position: "relative", height: "inherit", width: "inherit"}}>
             <MouseParallax strength={0.011} isAbsolutelyPositioned={true}>
