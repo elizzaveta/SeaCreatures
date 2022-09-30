@@ -9,7 +9,7 @@ import TitleImage from "./TitleImage";
 const TitleBlock = () => {
     return (
         <ThemeProvider theme={theme}>
-            <Container style={{position: "relative",}}>
+            <Container style={{position: "relative", height:"100%", display:"flex", alignItems: "center"}}>
                 <Grid container
                       columns={{md: 2, lg: 2, sm: 1, xs: 1}}
                       spacing={{lg: 5, md: 5, sm: 0, xs: 0}}

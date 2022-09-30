@@ -4,12 +4,12 @@ import {useParallax} from "react-scroll-parallax";
 const ParallaxBackground = () => {
     const [style, setStyle] = useState({
         background: "rgba(217,246,242,0.49)",
-        height: window.innerHeight,
-        width: '120%',
+        height: "100%",
+        width: '140%',
         position: 'absolute',
         zIndex: -5,
         top: 0,
-        left: "-10%",
+        left: "-20%",
         borderRadius: "100% 100% 0 0"
     })
     const parallax = useParallax({

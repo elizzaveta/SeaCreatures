@@ -1,6 +1,5 @@
 import React from 'react';
-import {theme} from "../styles/Theme";
-import {Box, ThemeProvider} from "@material-ui/core";
+import {Box} from "@material-ui/core";
 import {Container} from "@material-ui/core";
 import {creatures} from "../store/CreaturesDescription";
 import CreatureDescription from "./CreatureDescription";
@@ -13,33 +12,34 @@ import ParallaxWater from "./ParallaxElements/abstract/ParallaxWater";
 const CrabBlock = () => {
 
     return (
-        <ThemeProvider theme={theme}>
-            <Box style={{
-                position: "relative",
-                height: window.innerHeight,
-                background: "#C6DEE5",
-                opacity: 0.8,
-                overflow: "hidden"
-            }}>
-                <Container style={{position: "relative"}}>
-                    <CreatureDescription
-                        name={creatures.crab.name}
-                        description={creatures.crab.description}
-                        titleColor="custom"/>
-                </Container>
 
-                <img src={crab3} height={270} alt="crab"
-                     style={{position: "absolute", top: 50, left: 170, zIndex: -3, rotate: '150deg'}}/>
-                <img src={crab2} height={195} alt="crab"
-                     style={{position: "absolute", top: 446, left: 255, zIndex: -3, rotate: '22deg'}}/>
-                <img src={crab1} height={265} alt="crab"
-                     style={{position: "absolute", top: 70, left: 1000, zIndex: -3, rotate: '-150deg'}}/>
-                <img src={crab4} height={215} alt="crab"
-                     style={{position: "absolute", top: 449, left: 850, zIndex: -3, rotate: '-22deg'}}/>
+        <Box style={{
+            position: "relative",
+            height: "100%",
+            background: "#C6DEE5",
+            opacity: 0.8,
+            overflow: "hidden",
+            display: "flex",
+            alignItems:"center"
+        }}>
+            <Container>
+                <CreatureDescription
+                    name={creatures.crab.name}
+                    description={creatures.crab.description}
+                />
+            </Container>
 
-                <ParallaxWater/>
-            </Box>
-        </ThemeProvider>
+            <img src={crab3} height={270} alt="crab"
+                 style={{position: "absolute", top: "7vh", left: 170, zIndex: -3, rotate: '150deg'}}/>
+            <img src={crab2} height={195} alt="crab"
+                 style={{position: "absolute", top: "60vh", left: 255, zIndex: -3, rotate: '22deg'}}/>
+            <img src={crab1} height={265} alt="crab"
+                 style={{position: "absolute", top: "12vh", left: 1000, zIndex: -3, rotate: '-150deg'}}/>
+            <img src={crab4} height={215} alt="crab"
+                 style={{position: "absolute", top: "65vh", left: 850, zIndex: -3, rotate: '-22deg'}}/>
+
+            <ParallaxWater/>
+        </Box>
     );
 };
 

@@ -9,7 +9,7 @@ import ParallaxBubble from "./ParallaxElements/abstract/ParallaxBubble";
 const ShrimpBlock = () => {
     return (
         <Container style={{
-            height: window.innerHeight,
+            height: "100%",
             position: "relative"
         }}>
             <CreatureDescription name={creatures.shrimp.name} description={creatures.shrimp.description}

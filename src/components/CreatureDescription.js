@@ -4,6 +4,7 @@ import {theme} from "../styles/Theme";
 
 const CreatureDescription = (props) => {
     const {name, description, titleColor} = props;
+
     return (
         <ThemeProvider theme={theme}>
                 <Box component="div"
@@ -12,7 +13,7 @@ const CreatureDescription = (props) => {
                          justifyContent: "center",
                          flexDirection: "column",
                          alignItems: 'center',
-                         height: 680
+                         height: "100%"
                      }}>
                     <Box>
                         <Box component="div" sx={{fontWeight: "bold"}}>

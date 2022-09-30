@@ -6,15 +6,16 @@ import CrabBlock from "./CrabBlock";
 import ShrimpBlock from "./ShrimpBlock";
 import ScorpionBlock from "./ScorpionBlock";
 import Footer from "./Footer";
+import InfoBlock from "./InfoBlock";
 
 const Landing = () => {
     return (
         <ParallaxProvider>
-            <TitleBlock/>
-            <FishBlock/>
-            <CrabBlock/>
-            <ShrimpBlock/>
-            <ScorpionBlock/>
+            <InfoBlock child={<TitleBlock/>}/>
+            <InfoBlock child={<FishBlock/>}/>
+            <InfoBlock child={<CrabBlock/>}/>
+            <InfoBlock child={<ShrimpBlock/>}/>
+            <InfoBlock child={<ScorpionBlock/>}/>
             <Footer/>
         </ParallaxProvider>
     );
