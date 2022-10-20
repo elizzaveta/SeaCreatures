@@ -14,6 +14,7 @@ const TitleBlock = () => {
                 <Grid container
                       columns={{md: 2, lg: 2, sm: 1, xs: 1}}
                       spacing={{lg: 5, md: 5, sm: 0, xs: 0}}
+                      height={window.innerHeight}
                       className={styles.gridContainer}
                 >
 
