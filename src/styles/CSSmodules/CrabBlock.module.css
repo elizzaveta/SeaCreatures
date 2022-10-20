@@ -1,0 +1,45 @@
+.wrapper {
+    position: relative;
+    height: 100%;
+    background: #C6DEE5;
+    opacity: 0.8;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.crab1 {
+    width: 23vw;
+    position: absolute;
+    top: 10vh;
+    left: 60vw;
+    z-index: -3;
+    rotate: -150deg
+}
+
+.crab2 {
+    width: 25vw;
+    position: absolute;
+    bottom: 9vh;
+    right: 60vw;
+    z-index: -3;
+    rotate: 22deg
+}
+
+.crab3 {
+    width: 18vw;
+    position: absolute;
+    top: 8vh;
+    right: 65vw;
+    z-index: -3;
+    rotate: 150deg
+}
+
+.crab4 {
+    width: 23vw;
+    position: absolute;
+    bottom: 7vh;
+    left: 60vw;
+    z-index: -3;
+    rotate: -22deg;
+}

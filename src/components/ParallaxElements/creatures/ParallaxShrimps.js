@@ -22,13 +22,13 @@ const ParallaxShrimps = () => {
     return (
         <div>
             <img ref={parallaxShrimp1.ref} src={shrimp1} alt="shrimp"
-                 style={{position: "absolute", height: 145, top: 126, left: 20}}/>
+                 style={{position: "absolute", width:"15vw", top: "12vh", left: "7vw"}}/>
             <img ref={parallaxShrimp2.ref} src={shrimp2} alt="shrimp"
-                 style={{position: "absolute", height: 195, top: 350, left: 200}}/>
+                 style={{position: "absolute", width:"13vw", top: "40vh", left: "12vw"}}/>
             <img ref={parallaxShrimp3.ref} src={shrimp3} alt="shrimp"
-                 style={{position: "absolute", height: 155, top: 450, left: 750}}/>
+                 style={{position: "absolute", width:"16vw", top: "65vh", right: "20vw"}}/>
             <img ref={parallaxShrimp4.ref} src={shrimp4} alt="shrimp"
-                 style={{position: "absolute", height: 155, top: 550, left: 1100}}/>
+                 style={{position: "absolute", width:"12vw", top: "80vh", right: "9vw"}}/>
         </div>
     );
 };

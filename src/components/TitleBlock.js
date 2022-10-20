@@ -4,17 +4,17 @@ import {Container, Typography} from "@material-ui/core"
 import {theme} from "../styles/Theme";
 import TitleText from "./TitleText";
 import TitleImage from "./TitleImage";
+import styles from "../styles/CSSmodules/TitleBlock.module.css"
 
 
 const TitleBlock = () => {
     return (
         <ThemeProvider theme={theme}>
-            <Container style={{position: "relative", height:"100%", display:"flex", alignItems: "center"}}>
+            <Container className={styles.wrapper}>
                 <Grid container
                       columns={{md: 2, lg: 2, sm: 1, xs: 1}}
                       spacing={{lg: 5, md: 5, sm: 0, xs: 0}}
-                      height={window.innerHeight}
-                      style={{display:"flex", alignItems:"center"}}
+                      className={styles.gridContainer}
                 >
 
                     <Grid item lg={1} md={1} sm={1} xs={1} sx={{display: "flex"}}
@@ -36,14 +36,7 @@ const TitleBlock = () => {
                     </Grid>
 
                 </Grid>
-                <Typography style={{
-                    position: "absolute",
-                    bottom: 30,
-                    color: 'lightslategray',
-                    opacity: 0.5,
-                    textAlign: 'center',
-                    width: "100%"
-                }} variant="subtitle2">Hint: try to move your mouse</Typography>
+                <Typography className={styles.hint} variant="subtitle2">Hint: try to move your mouse</Typography>
             </Container>
         </ThemeProvider>
     );

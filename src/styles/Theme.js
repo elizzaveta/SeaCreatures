@@ -4,26 +4,10 @@ import {createTheme} from "@material-ui/core";
 export const theme = createTheme({
     typography: {
         h1: {
-            '@media (min-width:1280px)': {
-                fontSize: '96px',
-            },
-            '@media (max-width:1280px)': {
-                fontSize: '65px',
-            },
-            '@media (max-width:960px)': {
-                fontSize: '45px',
-            }
+            fontSize: "7vw"
         },
         h2: {
-            '@media (min-width:1280px)': {
-                fontSize: '64px',
-            },
-            '@media (max-width:1280px)': {
-                fontSize: '40px',
-            },
-            '@media (max-width:960px)': {
-                fontSize: '20px',
-            }
+            fontSize:"5vw"
         },
         h3: {
             '@media (min-width:1280px)': {

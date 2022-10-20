@@ -8,8 +8,8 @@ const ParallaxPinkFish = () => {
     });
     const fishStyle = {
         position: "absolute",
-        top: "60vh",
-        height: "20vw"
+        bottom: "6vh",
+        height: "23vw"
     }
     return (
             <img ref={parallax.ref} src={pinkFish} style={fishStyle} alt="pink fish"/>

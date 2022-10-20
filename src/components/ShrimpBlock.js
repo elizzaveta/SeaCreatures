@@ -5,13 +5,11 @@ import CreatureDescription from "./CreatureDescription";
 import {creatures} from "../store/CreaturesDescription";
 import ParallaxShrimps from "./ParallaxElements/creatures/ParallaxShrimps";
 import ParallaxBubble from "./ParallaxElements/abstract/ParallaxBubble";
+import styles from "../styles/CSSmodules/ShrimpBlock.module.css"
 
 const ShrimpBlock = () => {
     return (
-        <Container style={{
-            height: "100%",
-            position: "relative"
-        }}>
+        <Container className={styles.wrapper}>
             <CreatureDescription name={creatures.shrimp.name} description={creatures.shrimp.description}
                                  titleColor={"primary.dark"}/>
             <ParallaxShrimps/>
@@ -22,16 +20,7 @@ const ShrimpBlock = () => {
             <ParallaxBubble radius={20} top={450} left={920} speed={3} strength={0.09}/>
             <img src={twoSpots}
                 alt="light blue spots"
-                 style={{
-                     position: "absolute",
-                     width: '100%',
-                     marginBottom: "auto",
-                     marginTop: "auto",
-                     top: 0,
-                     bottom: 0,
-                     textAlign: "center",
-                     zIndex: -4
-                 }}/>
+                 className={styles.bgImage}/>
         </Container>
     );
 };
