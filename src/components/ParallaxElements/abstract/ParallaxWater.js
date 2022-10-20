@@ -1,6 +1,6 @@
 import React from 'react';
-import topWater from "../../../images/abstractElements/topWater.png";
-import bottomWater from "../../../images/abstractElements/bottomWater.png";
+import topWater from "../../../images/abstractElements/topWater2.png";
+import bottomWater from "../../../images/abstractElements/bottomWater2.png";
 import {useParallax} from "react-scroll-parallax";
 import {MouseParallax} from "react-just-parallax";
 
@@ -15,7 +15,7 @@ const ParallaxWater = () => {
         <div>
             <MouseParallax strength={0.03} isAbsolutelyPositioned={true} zIndex={-1}>
                 <img ref={parallaxTop.ref} src={topWater} alt="water"
-                     style={{position: "absolute", top: -150, zIndex: -1, width: "110%", left: "-5%"}}/>
+                     style={{position: "absolute", top: -150, zIndex: -1, width: "110%",  left: "-5%"}}/>
             </MouseParallax>
             <MouseParallax strength={0.019} isAbsolutelyPositioned={true} zIndex={-2}>
                 <img ref={parallaxBottom.ref} src={bottomWater} alt="water"
